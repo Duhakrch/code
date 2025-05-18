@@ -1,0 +1,152 @@
+* {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hayvanlar {
+    width: 450px;
+    height: 230px;
+    background-color: #f6c28b;
+    background-image: url(../img/hayvanlar.jpg);
+    background-size: cover; /* Görseli kapsayacak þekilde büyüt */
+    background-position: center; /* Görseli ortala */
+    clip-path: polygon(50% 0%, 80% 100%, 20% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.bitkiler {
+    width: 450px;
+    height: 150px;
+    background-color: #a8d5ba;
+    background-image: url(../img/bitkiler.jpg);
+    background-size: cover; /* Görseli kapsayacak þekilde büyüt */
+    background-position: center; /* Görseli ortala */
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}    
+
+.alt-secenekler, .hayvanlar-bolmesi, .bitkiler-bolmesi {
+    display: none;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+button {
+    margin: 2px 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.piramid-container {
+    width: 80vw; /* Kapsayýcýnýn geniþliði */
+    height: 80vh; /* Kapsayýcýnýn yüksekliði */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.piramid-kat:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+
+.piramid-kat button {
+    background-color: rgba(255, 255, 255, 0.5); 
+    border: 2px solid rgba(255, 255, 255, 0.5); 
+    color: black; 
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+    .piramid-kat button:hover {
+        background-color: rgba(255, 255, 255, 0.8); 
+        color: rgba(0, 0, 0, 1); 
+    }
+
+
+.alt-secenekler {
+    display: none;
+    margin-left: 20px;
+    margin-top: 5px;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+
+}
+
+
+
+    .alt-secenekler button {
+        margin: 5px 0;
+        padding: 8px;
+        background-color: #81c7a5;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+        .alt-secenekler button:hover {
+            background-color: #58a68f;
+        }
+
+
+.alt-grup {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+    .alt-grup button {
+        background-color: #a8d5ba;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+
+button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin: 3px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+    button:hover {
+        background-color: #cbe4de;
+        transform: scale(1.05);
+    }
